@@ -13,9 +13,8 @@
 #      - "8080:80"
 
 services:
-  db:
-    image: mysql
-    ports:
-      - "3306:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: 123456
+  image: mysql
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: 123456

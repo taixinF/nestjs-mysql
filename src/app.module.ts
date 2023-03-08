@@ -5,6 +5,7 @@ import { User } from './typeorm/entities/User';
 import { UsersModule } from './users/users.module';
 import { AppController } from './app.controller';
 import { Profile } from './typeorm/entities/Profile';
+import { Post } from './typeorm/entities/Posts';
 
 @Module({
   imports: [
@@ -16,7 +17,7 @@ import { Profile } from './typeorm/entities/Profile';
       password: '123456',
       database: 'mysql_one',
       synchronize: true,
-      entities: [User, Profile],
+      entities: [User, Profile, Post],
     }),
     UsersModule,
   ],
